@@ -1,26 +1,21 @@
-     ,-----.,--.                  ,--. ,---.   ,--.,------.  ,------.
-    '  .--./|  | ,---. ,--.,--. ,-|  || o   \  |  ||  .-.  \ |  .---'
-    |  |    |  || .-. ||  ||  |' .-. |`..'  |  |  ||  |  \  :|  `--, 
-    '  '--'\|  |' '-' ''  ''  '\ `-' | .'  /   |  ||  '--'  /|  `---.
-     `-----'`--' `---'  `----'  `---'  `--'    `--'`-------' `------'
-    ----------------------------------------------------------------- 
+TRAVEL
 
+The idea of the cite is to provide some information about the countries and to make it real for travel lovers to realize their dreams to visit a favorite country.
 
-Hi there! Welcome to Cloud9 IDE!
+The main page consists of:
+- the navigation menu across the cite;
+- a slide show;
+- and the block of continents to observe
 
-To get you started, we included a small hello world application.
+When the user clicks one of the blocks, he\she is redirected to the Tours page.
 
-1) Open the hello-world.html file
+The Tours page consists of the blocks of countries. When the user hovers the block -> its opacity transforms from 0.6 to 1 which helps to highlight the country. The user can also learn more about the country by clicking the link in the bottom of the country block.
 
-2) Click on the Preview button to open a live preview pane
+The Contacts page consists of two parts:
 
-3) Make some changes to the file, save, watch the preview, and have fun!
+- The form (to receive the user's information)
+- The contacts of the travel agency
 
-Happy coding!
-The Cloud9 IDE team
+The form consists of several inputs, some of them are necessary to fill in. The inputs also have the 'placeholder' attribute to help the user fill in the correct information. 
 
-
-## Support & Documentation
-
-Visit http://docs.c9.io for documentation, or http://support.c9.io for support.
-To watch some training videos, visit http://www.youtube.com/user/c9ide
+The cite is adaptive to the desktops and mobile phones. 
