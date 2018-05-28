@@ -163,16 +163,20 @@ footer {
     
     .heading {
        text-align: left;
-    }
-
-    ul {
-        display: none;
+       font-size: 15px;
     }
     
-    ul>li:nth-child(1) {
-        position: absolute;
-        top: 10px;
-        left: 15px;
+    ul {
+        list-style: none;
+        position: fixed;
+        z-index: 100;
+        top: 5px;
+        padding: 0;
+        left: -25vw;
+    }
+    
+    .menu>li:nth-child(4) {
+        display: none;
     }
     
     main {

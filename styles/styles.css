@@ -11,7 +11,7 @@ body {
 
 header {
     background-color: #795548;
-    background: linear-gradient(to bottom, #83AEB2, #E0E8E8);
+    background: linear-gradient(to bottom, #E0E8E8, #b1cbce, #E0E8E8);
     height: 10%;
     width: 100%;
 }
@@ -28,6 +28,7 @@ ul {
     padding: 0;
     list-style: none;
     margin-left: 50vw;
+    z-index: 100;
 }
 
 ul.menu>li {
@@ -43,11 +44,11 @@ ul.menu>li>a {
     color: white;
     background-color: #83AEB2;
     text-decoration: none;
+    text-shadow: 1px 1px 2px black;
 }
 
 ul.menu>li>a:hover {
     background-color: #ffddc1;
-    opacity: 0.5;
 }
 
 ul.submenu {
@@ -57,6 +58,7 @@ ul.submenu {
     top: 42px;
     left: -49.70vw;
     text-align: center;
+    z-index: 100;
 }
 
 ul.submenu>li>a {
@@ -65,20 +67,25 @@ ul.submenu>li>a {
     color: white;
     background-color: #ffddc1;
     text-decoration: none;
+    text-shadow: 1px 1px 2px black;
 }
 
 ul.submenu>li>a:hover {
     background-color: #83AEB2;
-    opacity: 0.5;
 }
 
 ul.menu>li:hover>ul.submenu {
     display: block;
-    z-index: 100;
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
 }
 
 .slide {
-    opacity: 0.8;
+    opacity: 0.8 !important;
 }
 
 /* styles for .blocks */
@@ -138,15 +145,25 @@ ul.menu>li:hover>ul.submenu {
 
     ul {
         margin-left: auto;
+        background-color: #83AEB2;
     }
 
     ul.menu>li:nth-child(2) {
         display: none;
     }
+    
+    .sticky {
+        position: fixed;
+        top: 0;
+        width: 100%;
+        background-color: #83AEB2;
+    }
 
     h1 {
         text-align: center;
         font-size: 25px;
+        position: inherit;
+        margin-top: 8vh;
     }
 
     .pins,

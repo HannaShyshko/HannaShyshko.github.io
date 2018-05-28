@@ -11,9 +11,9 @@
 <body>
     <header>
         <nav>
-            <ul class="menu">
-                <li><a href=# title='to main manu'>Main</a></li>
-                <li><a href=# title='tours'>Tours</a>
+            <ul id='navbar' class="menu">
+                <li><a href="index.html" title='to main menu'>Main</a></li>
+                <li><a href="index.html" title='tours'>Tours</a>
                     <ul class="submenu">
                         <li><a href="index1.html" title='to africa'>Africa</a></li>
                         <li><a href="index2.html" title='to asia'>Asia</a></li>
@@ -23,9 +23,26 @@
                     </ul>
                 </li>
                 <li><a href="index6.html" title='contacts'>Contacts</a></li>
-                <li><a href=# title='team'>Team</a></li>
+                <li><a href="index.html" title='team'>Team</a></li>
             </ul>
-            <h1>TRAVEL</h1>
+            
+<script>
+    window.onscroll = function() { myFunction() };
+
+    var navbar = document.getElementById("navbar");
+    var sticky = navbar.offsetTop;
+
+    function myFunction() {
+        if (window.pageYOffset >= sticky) {
+            navbar.classList.add("sticky")
+        }
+        else {
+            navbar.classList.remove("sticky");
+        }
+    }
+</script>
+            
+            <h1 class='heading'>TRAVEL</h1>
         </nav>
     </header>
 
@@ -51,7 +68,6 @@
             
         </div>
     </div>
-    
 
         <script>
             var slideIndex = 0;
