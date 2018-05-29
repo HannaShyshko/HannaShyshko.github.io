@@ -170,9 +170,13 @@ footer {
         list-style: none;
         position: fixed;
         z-index: 100;
-        top: 5px;
+        top: 10px;
         padding: 0;
         left: -25vw;
+    }
+    
+    ul.menu>li {
+        padding: 0;
     }
     
     .menu>li:nth-child(4) {

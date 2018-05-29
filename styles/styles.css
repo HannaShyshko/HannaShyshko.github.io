@@ -16,6 +16,12 @@ header {
     width: 100%;
 }
 
+nav {
+    position: fixed;
+    top: 0;
+    z-index: 100;
+}
+
 h1 {
     font-size: 4vw;
     color: #83AEB2;
@@ -76,12 +82,6 @@ ul.submenu>li>a:hover {
 
 ul.menu>li:hover>ul.submenu {
     display: block;
-}
-
-.sticky {
-  position: fixed;
-  top: 0;
-  width: 100%;
 }
 
 .slide {
@@ -152,11 +152,18 @@ ul.menu>li:hover>ul.submenu {
         display: none;
     }
     
-    .sticky {
+     nav {
         position: fixed;
         top: 0;
         width: 100%;
-        background-color: #83AEB2;
+        z-index: 100;
+    }
+    
+     .heading {
+        text-align: center;
+        font-size: 25px;
+        position: relative;
+        margin-top: 8vh;
     }
 
     h1 {
@@ -169,6 +176,10 @@ ul.menu>li:hover>ul.submenu {
     .pins,
     .slide>img {
         display: none;
+    }
+    
+    nav {
+        position: fixed;
     }
 
     .countries>div {

@@ -23,12 +23,18 @@ h1 {
     margin-left: 1vw;
 }
 
+nav {
+    position: fixed;
+    top: 0;
+}
+
 ul {
     display: flex;
     margin: 0;
     padding: 0;
     list-style: none;
     margin-left: 50vw;
+    z-index: 100;
 }
 
 ul.menu>li {
@@ -58,6 +64,7 @@ ul.submenu {
     top: 42px;
     left: -49.70vw;
     text-align: center;
+    z-index: 100;
 }
 
 ul.submenu>li>a {
@@ -75,13 +82,6 @@ ul.submenu>li>a:hover {
 
 ul.menu>li:hover>ul.submenu {
     display: block;
-    z-index: 100;
-}
-
-.sticky {
-  position: fixed;
-  top: 0;
-  width: 100%;
 }
 
 main {
@@ -154,7 +154,53 @@ footer {
 }
 
 .icons {
-    margin: 0 10px;
+    margin-left: 15vw;
+}
+
+.icons>a {
+    display: flex;
+    float: left;
+    margin: 1vw;
+    padding: 15px;
+    height: 4vmin;
+    width: 4vmin;
+    /*outline: 0.5px solid black;*/
+    border-radius: 50%;
+}
+
+.icons>a:nth-child(1) {
+    background-image: url('../images/sprites.jpg');
+    background-repeat: no-repeat;
+    background-position: 41.5% 25%;
+    background-size: 800%;
+}
+
+.icons>a:nth-child(2) {
+    background-image: url('../images/sprites.jpg');
+    background-repeat: no-repeat;
+    background-position: 26% 25%;
+    background-size: 800%;
+}
+
+.icons>a:nth-child(3) {
+    background-image: url('../images/sprites.jpg');
+    background-repeat: no-repeat;
+    background-position: 57.5% 25%;
+    background-size: 800%;
+}
+
+.icons>a:nth-child(4) {
+    background-image: url('../images/sprites.jpg');
+    background-repeat: no-repeat;
+    background-position: 25.8% 58.4%;
+    background-size: 800%;
+}
+
+.icons>a:nth-child(5) {
+    background-image: url('../images/sprites.jpg');
+    background-repeat: no-repeat;
+    background-position: 73% 25%;
+    background-size: 800%;
 }
 
 @media (min-width: 320px) and (max-width: 820px) {
@@ -172,20 +218,21 @@ footer {
     ul {
         margin-left: auto;
         background-color: #83AEB2;
+        width: 100%;
     }
 
     ul.menu>li:nth-child(2) {
         display: none;
     }
     
-    .sticky {
+    nav {
         position: fixed;
         top: 0;
         width: 100%;
-        background-color: #83AEB2;
+        z-index: 100;
     }
 
-    h1 {
+    .heading {
         text-align: center;
         font-size: 25px;
         position: relative;
@@ -198,7 +245,11 @@ footer {
     }
     
     .left, .right {
-        width: 100%;
+        width: 90%;
+    }
+    
+    label {
+        display: none;
     }
     
     legend {
@@ -256,5 +307,6 @@ footer {
         width: 100%;
         height: 10%;
     }
+    
     
 }
